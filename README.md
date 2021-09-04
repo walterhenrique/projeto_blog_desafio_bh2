@@ -9,5 +9,6 @@
   iniciado um estudo de markdown rápido para edição deste readme (que estava em HTML :-/)  
   voltando ao Git + GitHub  
   
-  
+### Dia 03
+  OK, GitHub entendido. Criando o BLOG com HTML+CSS que subirei aqui hoje.
  
