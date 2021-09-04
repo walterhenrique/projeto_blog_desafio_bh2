@@ -10,5 +10,5 @@
   voltando ao Git + GitHub  
   
 ### Dia 03
-  OK, GitHub entendido. Criando o BLOG com HTML+CSS que subirei aqui hoje.
+  OK, GitHub entendido. Criando a estrutura com HTML que subirei aqui hoje. O CSS fica para amanhã já que ficou muito incompleto ainda.  
  
