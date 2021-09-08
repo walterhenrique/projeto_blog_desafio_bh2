@@ -12,3 +12,6 @@
 ### Dia 03
   OK, GitHub entendido. Criando a estrutura com HTML que subirei aqui hoje. O CSS fica para amanhã já que ficou muito incompleto ainda.  
  
+### Dia 05  
+  Compreender consumo de API está bem complexo. Acredito que seja necessário domínio de JS antes de conseguir tal proeza.  
+  
