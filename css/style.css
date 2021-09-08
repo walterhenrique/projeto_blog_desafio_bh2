@@ -7,6 +7,13 @@
     font-family: 'Open Sans', 'Segoe UI', Verdana, sans-serif;
     color: rgba(0,0,0,.6);
 }
+*[style*="--aspect-ratio"] > :first-child {
+    width: 100%;
+    height: auto;
+}
+[style*="--aspect-ratio"] > img {  
+    height: auto;
+}
 
 html, body{
     height: 100%;
@@ -89,12 +96,37 @@ header .menu ul li input[type=text]:focus{
 header .menu ul li a{
     text-decoration: none;
     color: rgb(120,120,120);
-}    
+} 
+
+@supports (--custom:property) {
+    [style*="--aspect-ratio"] {
+    position: relative;
+    }
+    
+    [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }
+    
+    [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    }  
+}
+iframe{
+    border: none;
+    box-shadow: none;
+    /*margin-bottom: 600px;  talvez usar... */
+}   
 div.post{
     height: 100%;
     background-color: #dddddd;
     width: 80%;
     padding-right: 40px;
+    
 }
 div.sidebar{
     height: 100%;
@@ -111,9 +143,9 @@ section.box-captura{
 }
 section.content{
     padding: 2%;
-    height: 300px;
+    height: 600px;
     background-color: #dddddd;
-
+    
 }
 footer{
     /*height: 180px;*/
