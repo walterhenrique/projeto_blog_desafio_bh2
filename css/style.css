@@ -4,12 +4,13 @@
     margin: 0;
     padding; 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', serif;
+    font-family: 'Open Sans', 'Segoe UI', Verdana, sans-serif;
+    color: rgba(0,0,0,.6);
 }
 
 html, body{
     height: 100%;
-
+    
 }
 
 .container{
@@ -20,7 +21,6 @@ html, body{
 
 .clear{
     clear: both;
-
 }
 
 .left{
@@ -30,12 +30,15 @@ html, body{
 .right{
     float: right;
 }
+header{
+/*    background: url("../img/bloggestgraynobg.png") no-repeat;*/
+}
 header .container{
     padding: 30px 20%;
-
+	
 }
 header .logo h2{
-    color: blue;
+    color:rgb(88, 88, 88);
     margin-left: 10px;
     cursor: pointer;
     font-size: 30px;
@@ -44,6 +47,9 @@ header .logo h2:hover{
     color: rgb(120,120,120);
     cursor: pointer;
     transition: 0.7s;
+}
+header .menu {
+        display:block; /*essa linha poderá fixar o menu. revisar após várias postagens - ou colocar no container do header? ou no header? */
 }
 header .menu ul{
     list-style-type: none;
@@ -86,28 +92,32 @@ header .menu ul li a{
 }    
 div.post{
     height: 100%;
-    background-color: green;
+    background-color: #dddddd;
     width: 80%;
+    padding-right: 40px;
 }
 div.sidebar{
     height: 100%;
-    background-color: purple;
+    background-color: #dddddd;
     width: 20%;
+    padding-left: 30px;
 }
 
 section.box-captura{
     /* remover o background e  height  - deixado só para visualização */
-    height: 180px;
-    background-color: blue;
-    /*background-color: rgb(120,120,120);*/
+    height: 10px;
+    background-color: rgb(120,120,120);
+    /*background-color: rgb(120,120,120);  (??) */
 }
 section.content{
     padding: 2%;
     height: 300px;
-    background-color: yellow;
+    background-color: #dddddd;
 
 }
 footer{
-    height: 180px;
+    /*height: 180px;*/
     background-color: gray;
+    color: #dddddd;
+    padding: 20px;
 }
