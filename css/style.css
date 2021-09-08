@@ -7,6 +7,7 @@
     font-family: 'Open Sans', 'Segoe UI', Verdana, sans-serif;
     color: rgba(0,0,0,.6);
 }
+/*este código apenas se for colocar a postagem mais recente em iFrame
 *[style*="--aspect-ratio"] > :first-child {
     width: 100%;
     height: auto;
@@ -14,7 +15,7 @@
 [style*="--aspect-ratio"] > img {  
     height: auto;
 }
-
+*/
 html, body{
     height: 100%;
     
@@ -74,10 +75,10 @@ header .menu ul li:not(.fora){
     border: 0.5px solid rgb(120,120,120);
 }
 header .menu ul li:not(.fora):hover{
-    background-color: blue;
-    -webkit-box-shadow: 1px 1px 2px 0px rgba(44,34,181,1);
-    -moz-box-shadow: 1px 1px 2px 0px rgba(44,34,181,1);
-    box-shadow: 1px 1px 2px 0px rgba(44,34,181,1);
+    background-color: rgba(88,88,88,1);
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(88,88,88,1);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(88,88,88,1);
+    box-shadow: 1px 1px 2px 0px rgba(88,88,88,1);
 }
 header .menu ul li:not(.fora):hover a{
     color: white;
@@ -97,7 +98,7 @@ header .menu ul li a{
     text-decoration: none;
     color: rgb(120,120,120);
 } 
-
+/* este código apenas se for colocar a postagem mais recente em iFrame
 @supports (--custom:property) {
     [style*="--aspect-ratio"] {
     position: relative;
@@ -116,11 +117,13 @@ header .menu ul li a{
     height: 100%;
     }  
 }
+
 iframe{
     border: none;
     box-shadow: none;
-    /*margin-bottom: 600px;  talvez usar... */
-}   
+    margin-bottom: 600px;  talvez usar...
+
+}*/   
 div.post{
     height: 100%;
     background-color: #dddddd;
@@ -135,15 +138,40 @@ div.sidebar{
     padding-left: 30px;
 }
 
-section.box-captura{
+section.novo-post{
     /* remover o background e  height  - deixado só para visualização */
-    height: 10px;
+    height: 45px;
     background-color: rgb(120,120,120);
-    /*background-color: rgb(120,120,120);  (??) */
 }
+section.novo-post ul{
+    list-style-type: none;
+    padding-top: 8px;
+    padding-left: 160px;
+}
+section.novo-post ul li{
+    display: inline-block;
+    font-size: 13px;
+    /*padding: 2px 15px;*/
+    border-radius: 6px;
+}
+section.novo-post ul li input[type=text]{
+    padding: 2px 2%;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    border: 0.5px solid rgb(120,120,120);
+    margin-left: 5px;
+}
+section.novo-post ul li input[type=text]:focus{
+    outline: 0;
+}
+/*section.novo-post ul li a{
+    text-decoration: none;
+    color: rgb(120,120,120);
+} */
 section.content{
     padding: 2%;
-    height: 600px;
+    height: auto;
     background-color: #dddddd;
     
 }
@@ -151,5 +179,5 @@ footer{
     /*height: 180px;*/
     background-color: gray;
     color: #dddddd;
-    padding: 20px;
+    padding: 20px 200px;
 }
