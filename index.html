@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>nomedoblog</title>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/font/all.css">
     <!--<link rel="stylesheet" type="text/css" href="css/meupadrao.css">-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -31,10 +32,11 @@
         <!--botão e caixa de texto da nova postagem-->
         <ul>
             <li>
-                <input type="text" name="postar" placeholder="no que você está pensando?">
+                <input type="text" id="postagem" placeholder="no que você está pensando?">
             </li>
+            
             <li>
-                <!--BOTÃO-->
+                <input type="submit" onclick="postar()" value="postar">
             </li>
         </ul>
         <div class="container"></div>
@@ -45,7 +47,7 @@
             <!--<div id="recentdiv" style="--aspect-ratio: 16/9;">-->
                 <!--dentro do iframe abaixo chamar a postagem mais recente, que estará em outro arquivo html (verificar se esta é a melhor forma das postagens. talvez seja melhor um banco de dados e subir por JS?)-->
                 <!--<iframe name="recente"id="frame-recente"src="recente.html" scrolling="auto" frameborder="0"></iframe></div>-->
-            <p>abaixo conteúdo direto sem iframe</p>
+            <p id="postrecente">POSTAGEM MAIS RECENTE AQUI</p><br><br>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, voluptatem veritatis adipisci quae reprehenderit debitis ad aliquid dolores eos iure molestias magnam qui harum expedita. Harum, accusantium! Facilis, asperiores rerum!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat quisquam, at perspiciatis architecto voluptatum, illo vel optio veritatis libero soluta, ex repellat omnis modi odio quos. Ex, quos vitae?</p></br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugit tempore laudantium quibusdam ad temporibus. Ad, possimus quia. Laboriosam possimus, reprehenderit quaerat doloremque eligendi corporis consequuntur culpa accusamus aliquid pariatur!</p>
