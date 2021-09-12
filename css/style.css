@@ -137,7 +137,16 @@ div.sidebar{
     width: 20%;
     padding-left: 30px;
 }
-
+div.post p{
+    border-style:groove;
+    border-radius: 8px;
+    padding: 12px;
+}
+div.sidebar p{
+    border-style:groove;
+    border-radius: 8px;
+    padding: 6px;
+}
 section.novo-post{
     /* remover o background e  height  - deixado só para visualização */
     height: 45px;

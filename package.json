@@ -1,0 +1,12 @@
+{
+  "name": "BLOGinicio",
+  "version": "1.0.0",
+  "description": "Desafio Proposto para um BLOG que consome API xhelpers ### Projeto Blog (não nomeado).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
