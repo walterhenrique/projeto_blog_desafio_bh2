@@ -18,10 +18,10 @@ async function getContent (){
 
 getContent()
 
-function show(users){
+function show(posters){
     let output = ''
-    for( let user of users){
-        output += `<p>${user.name}</p>`
+    for( let post of posters){
+        output += `<p><strong>${post.title}</strong><br/>${post.body}</p>`
     }
     document.querySelector('div#postsalvo').innerHTML = output
 }
