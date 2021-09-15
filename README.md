@@ -1,5 +1,4 @@
-# projeto_blog_FRONT
-### BH2 challenge
+# projeto_blog_desafio_bh2
 Desafio Proposto para um BLOG que consome API xhelpers
 ### Projeto Blog (não nomeado).  
 
